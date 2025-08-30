@@ -22,7 +22,6 @@ class basket {
         return this;
     }
     myBasket() {
-        // Daha genel ve stabil bir selector kullan
         return cy.get('.cart-drawer__footer .cart-drawer__actions.lcw-button--primary');
     }
 
