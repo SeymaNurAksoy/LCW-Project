@@ -1,7 +1,7 @@
 import login from "../../pageObjects/login";
-const log = login;
 import { homePage } from "../../pageObjects/homePage";
 const home = new homePage();
+const log = login;
 
 describe('Login Controller', () => {
 
