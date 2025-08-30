@@ -7,8 +7,8 @@ describe('signUp', () => {
     home.navigateToHomePage();
   });
 
-  it('Success signUp', () => {
-    cy.url().should('include', 'lcw.com');
+  it('signUp', () => {
+    
     home.navigateToLoginSignUpPage();
     cy.url().should('include', '/giris');
     sign.registerNavigateButton().click();

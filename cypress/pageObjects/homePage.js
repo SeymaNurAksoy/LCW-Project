@@ -15,4 +15,14 @@ export class homePage {
         cy.get('.header-section > :nth-child(1)').click();
         return this;
     }
+
+    title() {
+        cy.get('.header__middle__left');
+        return this;
+    }
+
+    clickSearchBox(searchText) {
+        cy.get('.search-form__input-field--first-wrap').click().type(searchText + '{enter}');
+        return this;
+    }
 }
