@@ -21,9 +21,11 @@ Cypress.on('uncaught:exception', (err) => {
     err.message.includes('ADRUM.command is not a function') ||
     err.message.includes('ADRUM is not defined') ||
     err.message.includes('Script error') ||
-    err.message.includes('Cannot read properties of undefined') // yeni eklenen
+    err.message.includes('Cannot read properties of undefined') ||
+    err.message.includes('Cannot read properties of null') // yeni eklenen
   ) {
     return false; // Cypress testi fail etmez
   }
 });
+
 

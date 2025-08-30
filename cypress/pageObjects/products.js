@@ -5,8 +5,8 @@ class products {
         
     }
 
-    addToBasketButton() {
-        return cy.get('.product-detail__add-to-cart > .lcw-button');
+    sizeSelect() {
+        return cy.get('[data-displayorder="10"]');
     }
 }
 export default new products();  
